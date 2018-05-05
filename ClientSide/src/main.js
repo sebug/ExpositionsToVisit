@@ -1,3 +1,6 @@
 ﻿import foo from './foo.js';
 
-console.log(foo);
+foo().then(function (m) {
+    console.log(m);
+});
+
