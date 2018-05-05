@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp node_modules/regenerator-runtime/runtime.js wwwroot/runtime.js && ./node_modules/.bin/rollup -c"
+    "build": "cp node_modules/regenerator-runtime/runtime.js wwwroot/runtime.js && cp node_modules/knockout/build/output/knockout-latest.js wwwroot/knockout.js && ./node_modules/.bin/rollup -c"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "dependencies": {
+    "knockout": "^3.4.2",
     "regenerator": "^0.12.3"
   }
 }

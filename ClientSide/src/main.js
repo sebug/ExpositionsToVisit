@@ -2,5 +2,6 @@
 
 foo().then(function (m) {
     console.log(m);
+    console.log(ko);
 });
 
