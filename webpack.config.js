@@ -1,13 +1,22 @@
 const path = require('path');
 
 module.exports = {
-    entry: './ClientSide/src/index.js',
+    entry: {
+	app: './ClientSide/src/index.js',
+	appRoot: './ClientSide/components/app-root/index.js'
+    },
     output: {
-	filename: 'bundle.js',
+	filename: '[name].bundle.js',
 	path: path.resolve(__dirname, 'wwwroot')
     },
     module: {
 	rules: [
+	    {
+		test: /\.(html)$/,
+		use: {
+		    loader: 'html-loader'
+		}
+	    },
 	    {
 		test: /\.css$/,
 		use: [

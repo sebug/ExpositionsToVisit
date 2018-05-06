@@ -1,10 +1,10 @@
 import ko from 'knockout';
 import './style.css';
-import SplashImage from './splash.jpg';
+import appRoot from '../components/app-root/index.js';
 
-ko.applyBindings({
-    message: 'Ohai webpack',
-    splashUrl: SplashImage
-}, document.body);
+console.log(appRoot);
+
+ko.components.register('app-root', appRoot);
+ko.applyBindings({}, document.body);
 
 
