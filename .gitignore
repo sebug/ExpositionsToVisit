@@ -5,3 +5,5 @@ node_modules
 wwwroot/bundle.js
 wwwroot/*.bundle.js
 wwwroot/*.jpg
+wwwroot/index.html
+
