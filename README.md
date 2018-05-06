@@ -1,2 +1,3 @@
 ### Expositions to Visit
-Mainly an exploration of Rollup, seeing how it plays together with what I know about other parts of the client-side stack.
+After having played with Rollup, I think it will not work out for what I plan to do. Second iteration with Webpack.
+
